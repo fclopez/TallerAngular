@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<h2 class="form-title"> List of all patients </h2> 
+<div class="panel panel-default"> 
+    <!-- Default panel contents --> 
+    <div class="panel-heading">Patients</div> 
+    <!-- Table --> 
+    <table class="table"> 
+        <thead> 
+            <tr> 
+                <th>Id</th> 
+                <th>Name</th>
+                <th>Surname</th> 
+                <th>Age</th> 
+                <th>Telephone</th> 
+                <th>Cellphone</th> 
+                <th>Address</th> 
+                <th>City</th> 
+                <th>Country</th> 
+            </tr> 
+        </thead> 
+        <tbody> 
+            <tr ng-repeat="patient in patients | orderBy: 'id'"> 
+                <td>{{patient.id}}</td> 
+                <td>{{patient.name}}</td> 
+                <td>{{patient.surname}}</td> 
+                <td>{{patient.age}}</td> 
+                <td>{{patient.telephone}}</td> 
+                <td>{{patient.cellphone}}</td> 
+                <td>{{patient.address}}</td> 
+                <td>{{patient.city}}</td> 
+                <td>{{patient.country}}</td> 
+            </tr> 
+        </tbody> 
+    </table> 
+</div>
+
+
+
+
+
+
+
+
+
+
+

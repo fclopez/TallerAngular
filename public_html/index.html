@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html ng-app="eHealth">
+    <head>
+        <title>eHealth</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/app.css"/>
+    </head>
+    <body>
+        <div class="container theme-showcase" role="main">
+            <div class="row featurette"> 
+                <div class="col-md-5"> 
+                    <img src="images/eHealthContext.png" class="img-responsive" alt="500x500" data-holder-rendered="true"> 
+                </div> 
+                <div class="col-md-7"> 
+                    <h2>Hospital El Milagroso</h2> 
+                    <p class="lead"> eHealth es el programa de manejo de pacientes crónicos de El Milagroso, 
+                        un servicio de salud para el seguimiento en línea de pacientes con enfermedades crónicas tales como diabetes, 
+                        hipertensión e insuficiencia cardiaca. 
+                        El propósito es conocer la ubicación de los pacientes en todo momento y monitorear los signos vitales de forma 
+                        continua para lo cual se requiere que ellos reporten estos valores. 
+                        Particularmente, los pacientes con diabetes deben informar los niveles de glucosa en la sangre, 
+                        agudeza visual. 
+                    </p> 
+                </div> 
+            </div> 
+            <hr> 
+            <toolbar></toolbar>
+            <patient-info></patient-info>
+            <patient-form></patient-form>
+        </div>
+        <script type="text/javascript" src="js/angular.min.js"></script>
+        <script type="text/javascript" src="js/AngularControllers/app.js"></script>
+    </body>
+</html>
